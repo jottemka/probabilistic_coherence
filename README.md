@@ -1,6 +1,6 @@
 # A MATLAB Framework for Probabilistic Measures of Coherence and Confirmation
 
-This repo contains a simple MATLAB framework for the probabilistic measures of coherence and confirmation. The framework has been used in the following publications:
+This repo contains a simple MATLAB framework for the calculation of probabilistic measures of coherence and confirmation. The framework has been used in the following publications:
 
 1. https://link.springer.com/article/10.1007/s10670-015-9734-1
 2. https://link.springer.com/article/10.1007/s11229-015-0887-x
@@ -14,9 +14,9 @@ This repo contains a simple MATLAB framework for the probabilistic measures of c
 
 The framework consists of 3 functions:
 
-1. `coh.m`
-2. `sup.m`
-3. `ams.m`
+1. `coh(X,pr)`
+2. `sup(x,y,pr)`
+3. `ams(X,pr)`
 
 ## Example
 
