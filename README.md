@@ -19,11 +19,11 @@ A penultimate version of the paper can be found here: https://github.com/jottemk
 
 The framework consists of 3 functions:
 
-1. `coh(X,pr)`
-2. `sup(x,y,pr)`
+1. `coh(X,P)`
+2. `sup(x,y,P)`
 3. `ams(X,pr)`
 
-Where `X` is a row vector of index integers, `x` and `y` are integers and `pr` is a row probability vector, i.e. each cell is non-negative and all cells sum up to exactly 1.
+Where `X` is a row vector of index integers, `x` and `y` are integers and `P` is a row probability vector, i.e. each cell is non-negative and all cells sum up to exactly 1.
 
 ## Example
 
