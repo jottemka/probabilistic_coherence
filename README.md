@@ -6,7 +6,7 @@ The framework was introduced in the following publication: https://link.springer
 
 A penultimate version of the paper can be found here: https://github.com/jottemka/probabilistic_coherence/blob/main/evaluating.pdf
 
-The framework was also used in the following publications:
+## Further Publications Using the Framework
 
 1. https://link.springer.com/article/10.1007/s11229-015-0887-x
 1. https://link.springer.com/article/10.1007/s11229-015-0996-6
@@ -23,6 +23,45 @@ The framework consists of 3 functions:
 2. `sup(x,y,pr)`
 3. `ams(X,pr)`
 
+Where `X` is a row vector of index integers, `x` and `y` are integers and `pr` is a row probability vector, i.e. each cell is non-negative and all cells sum up to exactly 1.
+
 ## Example
 
-To be continued ...
+The main data structure of the framework is what is known as a *stochastic truth table*. For 3 binary random variables $x_1$, $x_2$ and $x_3$ it reads as follows:
+
+| $x_1$    | $x_2$ | $x_3$    | $P$          |
+|----------|-------|----------|--------------|
+| 0        | 0     | 0        | $1/16$        |
+| 0        | 0     | 1        | $2/16$        |
+| 0        | 1     | 0        | $2/16$        |
+| 0        | 1     | 1        | $3/16$        |
+| 1        | 0     | 0        | $1/16$        |
+| 1        | 0     | 1        | $4/16$        |
+| 1        | 1     | 0        | $2/16$        |
+| 1        | 1     | 1        | $1/16$        |
+
+Here, the joint probability distribution over the 3 variable is represented as a vector. In our framework this distribution would be written as:
+
+```MATLAB
+P = [1/16,2/16,2/16,3/16,1/16,4/16,2/16,1/16]
+```
+
+To calculate the degree of coherence of the set $\{x_1,x_2,x_3\}$ under $P$ one would write:
+
+```MATLAB
+coh([1,2,3],P)
+```
+
+Or if one would like the average degree of mutual Bayesian confirmation:
+
+```MATLAB
+ams([1,2,3],P)
+```
+
+And if one is interested in the degree of Bayesian confirmation variable $x_1$ receives from variable $x_2$:
+
+```MATLAB
+sup(1,2,P)
+```
+
+The above functions even process multiple probability distributions at the same time. Simply let $P$ be a matrix where each row corresponds to a joint probability distribution.
