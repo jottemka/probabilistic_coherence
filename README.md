@@ -27,7 +27,7 @@ Where `X` is a row vector of index integers, `x` and `y` are integers and `P` is
 
 ## Example
 
-The main data structure of the framework is what is known as a *stochastic truth table*. For 3 binary random variables $x_1$, $x_2$ and $x_3$ it reads as follows:
+The framework strongly relies on what is known as *stochastic truth tables*. For 3 binary random variables $x_1$, $x_2$ and $x_3$ such a table reads as follows:
 
 | $x_1$    | $x_2$ | $x_3$    | $P$          |
 |----------|-------|----------|--------------|
@@ -40,7 +40,7 @@ The main data structure of the framework is what is known as a *stochastic truth
 | 1        | 1     | 0        | $2/16$        |
 | 1        | 1     | 1        | $1/16$        |
 
-Here, the joint probability distribution over the 3 variable is represented as a vector. In our framework this distribution would be written as:
+Here, the joint probability distribution $P$ over the 3 variable is represented as a vector. In our framework, this distribution would be written as:
 
 ```MATLAB
 P = [1/16,2/16,2/16,3/16,1/16,4/16,2/16,1/16]
@@ -52,16 +52,16 @@ To calculate the degree of coherence of the set $\{x_1,x_2,x_3\}$ under $P$ one 
 coh([1,2,3],P)
 ```
 
-Or if one would like the average degree of mutual Bayesian confirmation:
+Or if one would like the average degree of mutual Bayesian confirmation for the set $\{x_1,x_2,x_3\}$:
 
 ```MATLAB
 ams([1,2,3],P)
 ```
 
-And if one is interested in the degree of Bayesian confirmation variable $x_1$ receives from variable $x_2$:
+And if one is interested in the degree of Bayesian confirmation the variable $x_1$ receives from the variable $x_2$, one would write:
 
 ```MATLAB
 sup(1,2,P)
 ```
 
-The above functions even process multiple probability distributions at the same time. Simply let $P$ be a matrix where each row corresponds to a joint probability distribution.
+The above functions also process multiple probability distributions at the same time. Simply let `P` be a matrix where each row corresponds to a joint probability distribution $P$.
