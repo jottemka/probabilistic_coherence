@@ -21,7 +21,7 @@ The framework consists of 3 functions:
 
 1. `coh(X,P)`
 2. `sup(x,y,P)`
-3. `ams(X,pr)`
+3. `ams(X,P)`
 
 Where `X` is a row vector of index integers, `x` and `y` are integers and `P` is a row probability vector, i.e. each cell is non-negative and all cells sum up to exactly 1.
 
