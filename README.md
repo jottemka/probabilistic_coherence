@@ -4,7 +4,7 @@ This repo contains a simple MATLAB framework for the calculation of probabilisti
 
 The framework was introduced in the following publication: https://link.springer.com/article/10.1007/s10670-015-9734-1
 
-A penultimate version of the paper can be found here: https://github.com/jottemka/probabilistic_coherence/blob/main/evaluating.pdf
+A penultimate version of the paper can be found here: https://github.com/jottemka/probabilistic_coherence/blob/5139a471cf919c8fd25a19d66989a57e11fdf01f/README.md
 
 ## Further Publications Using the Framework
 
