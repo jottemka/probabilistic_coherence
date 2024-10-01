@@ -45,13 +45,13 @@ Here, the joint probability distribution $P$ over the 3 variable is represented 
 P = [1/16,2/16,2/16,3/16,1/16,4/16,2/16,1/16]
 ```
 
-To calculate the degree of coherence of the set $ \{x_1,x_2,x_3\} $ under $P$ one would write:
+To calculate the degree of coherence of the set $\{x_1,x_2,x_3\}$ under $P$ one would write:
 
 ```MATLAB
 coh([1,2,3],P)
 ```
 
-Or if one would like the average degree of mutual Bayesian confirmation for the set $ \{x_1,x_2,x_3\} $:
+Or if one would like the average degree of mutual Bayesian confirmation for the set $\{x_1,x_2,x_3\}$:
 
 ```MATLAB
 ams([1,2,3],P)
