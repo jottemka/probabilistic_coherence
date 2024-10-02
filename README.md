@@ -30,7 +30,7 @@ Let $X$ be some set consisting of variables $\{x_1, \ldots, x_n\}$ under some be
 
 1. Douven and Meijs average mutual support recipe, where $X'$ and $X''$ are non-empty, non-overlapping subsets of $X$ and $m=(3^{n}-2^{n+1})-1$ and $S$ can be any Bayesian confirmation measure:
 
-    $$\frac{\sum\limits^{m}_{i=1}{S}\left(\,\left(\bigwedge\limits_{x_j\in X'} x_j,\bigwedge\limits_{x_k\in X''} x_k\right)_i\right)}{m}$$
+    $$m^{-1}\sum\limits^{m}_{i=1}{S}\left(\,\left(\bigwedge\limits_{x_j\in X'}x_j,\bigwedge\limits_{x_k\in X''}x_k\right)_i\right)$$
 
 The implemented measures of Bayesian confirmation are the following:
 
